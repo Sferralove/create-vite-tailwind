@@ -11,17 +11,23 @@ Questo è un progetto vuoto completo di tutte le dependencies necessarie per avv
 
 Per utilizzare questo progetto, clonalo in locale sul tuo computer utilizzando il seguente comando:
 
-`git clone https://github.com/tuo_username/nome_del_progetto.git`
+```
+git clone https://github.com/tuo_username/nome_del_progetto.git
+```
 
 Una volta clonato il progetto, apri la cartella e installa le dependencies utilizzando il seguente comando:
 
-`npm install`
+```
+npm install
+```
 
 ## Utilizzo
 
 Dopo aver installato tutte le dependencies, puoi avviare il server di sviluppo con il seguente comando:
 
-`npm run dev`
+```
+npm run dev
+```
 
 Il server di sviluppo verrà avviato e sarà disponibile all'indirizzo http://localhost:3000.
 
