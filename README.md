@@ -12,7 +12,7 @@ Questo è un progetto vuoto completo di tutte le dependencies necessarie per avv
 Per utilizzare questo progetto, clonalo in locale sul tuo computer utilizzando il seguente comando:
 
 ```
-git clone https://github.com/tuo_username/nome_del_progetto.git
+git clone https://github.com/Sferralove/create-vite-tailwind.git
 ```
 
 Una volta clonato il progetto, apri la cartella e installa le dependencies utilizzando il seguente comando:
