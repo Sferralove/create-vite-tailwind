@@ -1,6 +1,6 @@
 # Create-Vite-Tailwind-app
 
-Questo è un progetto vuoto completo di tutte le dependencies necessarie per avviare un progetto React con Vite, Tailwind CSS, HeadlessUI, React Icons, React Router Dom, Redux e React-Redux. Puoi clonare questo progetto e utilizzarlo come base per i tuoi progetti React.
+Questo è un progetto vuoto completo di tutte le dependencies necessarie per avviare un progetto React con Vite, Tailwind CSS, HeadlessUI, React Icons, React Router Dom, Redux, React-Redux e Axios. Puoi clonare questo progetto e utilizzarlo come base per i tuoi progetti React.
 
 ## Prerequisiti
 
