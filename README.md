@@ -1,5 +1,7 @@
 # Create Vite Tailwind
 
+![Project cover](./src/assets/cover.png)
+
 Starter template per progetti React con Vite e Tailwind CSS.
 
 Il repository fornisce una base frontend gia pronta con una struttura cartelle iniziale, alias Vite configurati e un set di dipendenze comuni per costruire rapidamente applicazioni React moderne.
