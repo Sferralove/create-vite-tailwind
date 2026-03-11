@@ -46,6 +46,28 @@ cd create-vite-tailwind
 npm install
 ```
 
+Se vuoi assegnare subito un nome diverso alla cartella locale:
+
+```bash
+git clone https://github.com/Sferralove/create-vite-tailwind.git nome-progetto
+cd nome-progetto
+npm install
+```
+
+## Come usare questo template
+
+Se pubblichi il repository su GitHub come template, il flusso consigliato e usare `Use this template` per creare un nuovo repository separato.
+
+Se invece il progetto viene clonato direttamente, dopo il clone conviene personalizzare questi file:
+
+1. Aggiorna il nome del progetto in `package.json`.
+2. Cambia titolo, descrizione e metadata in `index.html`.
+3. Sostituisci il contenuto demo in `src/App.jsx`.
+4. Aggiorna colori, token CSS e stile base in `src/index.css`.
+5. Rimuovi o sostituisci asset demo in `src/assets`.
+6. Aggiorna `README.md` con informazioni del nuovo progetto.
+7. Se necessario, cambia il remote Git per collegarlo a un nuovo repository.
+
 ## Script disponibili
 
 Avvio del server di sviluppo:
