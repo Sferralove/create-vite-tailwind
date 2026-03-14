@@ -21,6 +21,7 @@ function App() {
             <a
               className="italic underline"
               href="https://github.com/Sferralove"
+              rel="noreferrer"
               target="_blank"
             >
               github.com/Sferralove
