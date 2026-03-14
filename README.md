@@ -2,103 +2,177 @@
 
 ![Project cover](./src/assets/cover.png)
 
-Starter template per progetti React con Vite e Tailwind CSS.
+A production-ready starter template for modern React applications built with Vite and Tailwind CSS.
 
-Il repository fornisce una base frontend gia pronta con una struttura cartelle iniziale, alias Vite configurati e un set di dipendenze comuni per costruire rapidamente applicazioni React moderne.
+This repository is designed to be used as a public GitHub template. It gives you a clean frontend baseline with routing, state management, UI utilities, linting, formatting, testing, and pre-commit automation already in place, so you can start building features instead of wiring tooling from scratch.
 
-## Stack incluso
+## Why this template
+
+- Fast setup for new React + Vite projects
+- Tailwind CSS 4 and common UI utilities included
+- ESLint, Prettier, Vitest, and Testing Library configured
+- Husky + lint-staged pre-commit workflow enabled
+- Routing, Redux, Axios, and reusable project structure ready to use
+- Vite path aliases configured for a cleaner import experience
+
+## Tech stack
 
 - React 19
 - Vite 7
 - Tailwind CSS 4
 - React Router 7
-- Redux 5 e React Redux 9
+- Redux 5 + React Redux 9
 - Axios
 - Headless UI
-- Radix UI
-- Lucide React e React Icons
-- Utility per classi Tailwind come `clsx`, `tailwind-merge` e `class-variance-authority`
+- Lucide React + React Icons
+- Vitest + Testing Library
+- ESLint + Prettier
+- Husky + lint-staged
 
-## Struttura iniziale
+## Quick start
 
-La cartella `src` e gia predisposta con directory dedicate a:
+### Use this template on GitHub
+
+Click `Use this template` on GitHub to create a new repository from this starter.
+
+### Or clone it directly
+
+```bash
+git clone https://github.com/Sferralove/create-vite-tailwind.git my-app
+cd my-app
+npm install
+npm run dev
+```
+
+Open the local URL shown by Vite, usually `http://localhost:5173`.
+
+## Requirements
+
+- Node.js `20.19+` or `22.12+`
+- npm `10+`
+
+## Available scripts
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+npm run format
+npm run format:check
+npm run test
+npm run test:run
+```
+
+## Recommended local workflow
+
+```bash
+npm install
+npm run dev
+npm run lint
+npm run test:run
+npm run build
+```
+
+## What is included
+
+### Tooling
+
+- ESLint with Airbnb-based React rules and Prettier compatibility
+- Prettier for consistent formatting
+- Vitest with `jsdom` for unit and component tests
+- Testing Library and `jest-dom` for UI testing
+- Husky + lint-staged to run checks on staged files before commit
+
+### Project structure
+
+The `src` folder already includes a scalable baseline:
 
 - `assets`
 - `components`
 - `context`
 - `pages`
 - `services`
+- `test`
 - `utils`
 - `views`
 
-Sono inoltre configurati gli alias import in [vite.config.js](./vite.config.js), ad esempio `@/`, `@components`, `@assets` e simili.
+### Path aliases
 
-## Prerequisiti
+Aliases are configured in [vite.config.js](./vite.config.js):
 
-- Node.js 20.19+ oppure 22.12+
-- npm 10+
+- `@` -> `src`
+- `@assets`
+- `@components`
+- `@context`
+- `@pages`
+- `@services`
+- `@utils`
+- `@views`
 
-## Installazione
+## First things to customize
 
-Clona il repository e installa le dipendenze:
+After creating your own project from this template, update these files first:
 
-```bash
-git clone https://github.com/Sferralove/create-vite-tailwind.git
-cd create-vite-tailwind
-npm install
-```
+1. Change the project name in `package.json`.
+2. Update the page title, metadata, and favicon in `index.html`.
+3. Replace the demo UI in `src/App.jsx`.
+4. Replace demo assets in `src/assets`.
+5. Adjust base styles and design tokens in `src/index.css`.
+6. Update this `README.md` with your project-specific documentation.
+7. If needed, remove any libraries you do not plan to use.
 
-Se vuoi assegnare subito un nome diverso alla cartella locale:
+## Testing
 
-```bash
-git clone https://github.com/Sferralove/create-vite-tailwind.git nome-progetto
-cd nome-progetto
-npm install
-```
+Vitest is configured through [vite.config.js](./vite.config.js), and a starter test is included.
 
-## Come usare questo template
-
-Se pubblichi il repository su GitHub come template, il flusso consigliato e usare `Use this template` per creare un nuovo repository separato.
-
-Se invece il progetto viene clonato direttamente, dopo il clone conviene personalizzare questi file:
-
-1. Aggiorna il nome del progetto in `package.json`.
-2. Cambia titolo, descrizione e metadata in `index.html`.
-3. Sostituisci il contenuto demo in `src/App.jsx`.
-4. Aggiorna colori, token CSS e stile base in `src/index.css`.
-5. Rimuovi o sostituisci asset demo in `src/assets`.
-6. Aggiorna `README.md` con informazioni del nuovo progetto.
-7. Se necessario, cambia il remote Git per collegarlo a un nuovo repository.
-
-## Script disponibili
-
-Avvio del server di sviluppo:
+Run the test suite with:
 
 ```bash
-npm run dev
+npm run test:run
 ```
 
-Build di produzione:
+For watch mode:
 
 ```bash
-npm run build
+npm run test
 ```
 
-Preview locale della build:
+## Code quality
 
-```bash
-npm run preview
-```
+This template includes:
 
-Nota: l'indirizzo locale del dev server viene assegnato da Vite al momento dell'avvio e puo variare in base alla configurazione o alla porta disponibile.
+- ESLint for code quality checks
+- Prettier for code formatting
+- Husky + lint-staged for pre-commit checks on staged files
 
-## Note
+Current pre-commit behavior:
 
-- Il progetto usa PostCSS con il plugin `@tailwindcss/postcss`, richiesto dal setup Tailwind CSS 4.
-- Sono presenti `.htaccess` e `Web.config` per facilitare il fallback delle route SPA in deploy su Apache o IIS.
-- Il file `components.json` prepara il progetto all'uso con componenti in stile `shadcn/ui`.
+- `*.js`, `*.jsx`: run ESLint with `--fix`, then Prettier
+- `*.css`, `*.html`, `*.json`, `*.md`: run Prettier
 
-## Autore
+## Deployment notes
 
-- Angelo Sferra
-- Contatti: sferra.angelo@gmail.com
+- `.htaccess` is included for Apache SPA route fallback support
+- `Web.config` is included for IIS deployments
+
+## Who this template is for
+
+This template is a strong starting point for:
+
+- React single-page applications
+- admin panels and dashboards
+- internal tools
+- CRUD applications
+- frontend projects that need solid tooling from day one
+
+If you need TypeScript, SSR, or a minimal dependency footprint, you may want to adapt this starter before using it in production.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+## Author
+
+Angelo Sferra  
+GitHub: [@Sferralove](https://github.com/Sferralove)
